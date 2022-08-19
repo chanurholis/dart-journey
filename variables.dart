@@ -6,9 +6,25 @@ var image = {
   'tags': ['saturn'],
   'url': '//path/to/saturn.jpg'
 };
+final DateTime now = new DateTime.now();
 
 void main() {
-  for (var i = 0; i < 2; i++) {
-    print(name);
+  if (year >= 2001) {
+    print('21st century');
+  } else {
+    print('20th century');
+  }
+
+  for (var object in flybyObjects) {
+    print(object);
+  }
+
+  for (var month = 1; month <= 12; month++) {
+    print(month);
+  }
+
+  while (year < 2022) {
+    year += 1;
+    print(year);
   }
 }
